@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
       content="Ghulam Abbas is an AI Engineer learning Artificial Intelligence, Machine Learning and Generative AI.">
     <title>Ghulam Abbas - AI Engineer</title>
@@ -96,38 +96,42 @@
     <section>
         <h2>Connect With Me</h2>
         <form action="">
+            <fieldset>
+      
             <label for="name">Name:</label>
             <input type="text" id="name" required name="name" placeholder="Enter your name">
             <br><br>
+
              <label for="email">Email:</label>
             <input type="email" id="email" required name="email" placeholder="Enter your email">
+           
             <br><br>
 
-            <br><br>
              <label for="phone">Phone:</label>
-            <input type="tel" id="phone" required name="phone" placeholder="Enter your phone">
+            <input type="tel" id="phone" required name="phone" placeholder="03XXXXXXXXX" pattern="[0-9]{11}" >
+            
             <br><br>
+
              <label for="subject">Subject:</label>
             <input type="text" id="subject" required name="subject" placeholder="Enter your subject">
+            
             <br><br>
+
              <label for="message">Message:</label>
             <textarea name="message" id="message" required placeholder="Write your message"></textarea>
-            <br><br>
-             <button type="submit">Submit</button>
 
-        </form>
-        <a href="https://github.com/Abbas-AI-Developer" target="_blank">
-          GitHub
-        </a>
-     </section>
-     <section>
-        <p>>Preferred Contact:</p>
-        <input type="ratio" id="contact-email" name="contact" value="email" >
-        <label for="contact-email">Email</label>
-        <input type="ratio" id="contact-phone" name="contact" value="phone" >
-        <label for="contact-phone">Phone</label>
-        
-        <p>Skills You Are Interested In:</p>
+           </fieldset>
+           <br>
+            <fieldset>     
+                <legend>Preferred Contact:</legend>
+                <input type="radio" id="contact-email" name="contact" value="email" >
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact" value="phone" >
+                <label for="contact-phone">Phone</label>
+            </fieldset>
+           <br>
+        <fieldset>
+               <legend>Skills You Are Interested In:</legend>
         <input type="checkbox" name="skills" id="ai" value="ai">
         <label for="ai">AI/Ml</label>
 
@@ -136,16 +140,29 @@
         
          <input type="checkbox" name="skills" id="genai" value="genai">
         <label for="genai">GenAI</label>
+        </fieldset>
+        <br>
+         <label for="country">Country:</label>
+            <select name="country" id="country" required>
+                <option value="">Select Your Country</option>
+                <option value="pak">Pakistan</option>
+                <option value="turkey">Turkey</option>
+                <option value="uk">UK</option>
+                <option value="others">Others</option>
 
-        <label for="country">Country:</label>
-        <select name="country" id="country">
-            <option value="">Select Your Country</option>
-            <option value="pak">Pakistan</option>
-            <option value="turkey">Turkey</option>
-            <option value="uk">UK</option>
-            <option value="others">Others</option>
-
-        </select>
+            </select>
+        <br><br>
+         <button
+            type="submit"
+            aria-label="Submit contact form">
+            Submit
+        </button>
+        </form>
+        <br>
+        <a href="https://github.com/Abbas-AI-Developer" target="_blank">
+          GitHub
+        </a>
+        
      </section>
     </main>
    <footer>
